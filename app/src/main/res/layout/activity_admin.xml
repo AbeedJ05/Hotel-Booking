@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:background="@color/purple_200"
+    tools:context=".Admin.Admin">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_700"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingRight="@dimen/car_ui_padding_3"
+            android:src="@drawable/settings" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:text="Admin"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="14dp"
+    android:src="@drawable/adad"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginTop="65dp"
+        android:rowCount="2">
+
+        <!-- Add Hotels Button -->
+        <Button
+            android:id="@+id/btnAddHotels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_700"
+            android:layout_margin="@dimen/car_ui_padding_2"
+            app:icon="@drawable/car_ui_icon_add"
+            android:gravity="start|center_vertical"
+            android:text="Add Hotels" />
+
+        <!-- Add Rooms Button -->
+        <Button
+            android:id="@+id/btnAddrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/car_ui_padding_2"
+            app:icon="@drawable/car_ui_icon_add"
+            android:backgroundTint="@color/purple_700"
+            android:gravity="end|center_vertical"
+            android:text="Add Rooms"/>
+
+        <!-- Show Reservations Button -->
+        <Button
+            android:id="@+id/editrooms"
+            android:layout_width="184dp"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/car_ui_padding_2"
+            android:backgroundTint="@color/purple_700"
+            android:gravity="start|center_vertical"
+            android:text="edit Rooms"
+            app:icon="@drawable/settingstool" />
+
+        <Button
+            android:id="@+id/btnShowReservations"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/teal_700"
+            android:gravity="end|center_vertical"
+            android:text=" Reservations"
+            android:layout_margin="@dimen/car_ui_padding_2"
+            app:icon="@drawable/info" />
+
+    </GridLayout>
+</LinearLayout>

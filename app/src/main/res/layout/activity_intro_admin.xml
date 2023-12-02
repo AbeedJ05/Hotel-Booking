@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgintro"
+    android:gravity="center"
+    tools:context=".Admin.intro_Admin">
+
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+      android:text="Admin mode"
+        android:elevation="10dp" />
+    <Button
+        android:id="@+id/userMode"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+       android:backgroundTint="#000D3D"
+        android:text="user Mode"
+        android:elevation="10dp" />
+</LinearLayout>

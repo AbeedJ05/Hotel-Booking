@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.SettingsFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_700"
+        android:gravity="center"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Settings"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </androidx.appcompat.widget.Toolbar>
+    <Button
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="about us"
+        app:icon="@drawable/info"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical" />
+    <Button
+        android:id="@+id/deleteAcc"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Delete Account"
+        app:icon="@drawable/delete"
+        android:drawableStart="@drawable/delete"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical" />
+
+
+    <Button
+        android:id="@+id/settingLogOut"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Log Out"
+        app:icon="@drawable/logout"
+        android:drawableStart="@drawable/logout"
+        android:drawablePadding="10dp"
+
+        android:gravity="start|center_vertical" />
+
+
+
+</LinearLayout>
